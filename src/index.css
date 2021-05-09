@@ -5,9 +5,121 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #2697FF;
+  color: #555555;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  color: #AFAFAF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+span {
+  color: #AFAFAF;
+}
+
+.container {
+  margin: 40px;
+}
+
+.component {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow:  0px 2px 3px #0059AB;
+  margin-bottom: 20px;
+}
+
+.links__link {
+  margin-right: 10px;
+}
+
+.links__link:last-child {
+  margin-right: 0;
+}
+
+.currencies {
+  width: fit-content;
+}
+
+.currencies__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.currency {
+  min-width: 300px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.currency-search {
+  width: fit-content;
+}
+
+.currency-search label {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.currency-search label span {
+  margin-bottom: 10px;
+}
+
+.currency-search label input {
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+.currency__name {
+  color: #AFAFAF;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.currency-relation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.currency-relation span {
+  color: #5B5B5B;
+  font-size: 1.5rem;
+}
+
+.currency-relation__right {
+  margin-right: 40px;
+}
+
+.currency-relation > img {
+  margin: 0 10px;
+}
+
+.currency-relation .switcher {
+  cursor: pointer;
+}
+
+.price-difference .increase span {
+  color: #2AFF26;
+}
+
+.price-difference img {
+  margin-right: 5px;
+}
+
+.price-difference .decline span {
+  color: #FF2626;
 }
