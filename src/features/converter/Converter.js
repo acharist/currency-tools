@@ -38,7 +38,7 @@ export default function Converter() {
         content = <div className="converter">
             <CurrencySelector listOfcurrencies={currencies} purpose="basic" stateCurrency={basicCurrency}/>
             <button className="convert" onClick={() => { dispatch(currenciesSwapped()); dispatch(converteChanged()); }}>
-                <img src={convert}/>
+                <img src={convert} alt="convert"/>
             </button>
             <CurrencySelector listOfcurrencies={currencies} purpose="quoted" stateCurrency={quotedCurrency}/>
         </div>

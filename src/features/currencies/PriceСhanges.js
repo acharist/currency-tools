@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import arrUp from './arr-up.svg';
 import arrDown from './arr-down.svg';
 import financial from '../../utilities/financial';

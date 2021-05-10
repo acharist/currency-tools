@@ -59,9 +59,7 @@ span {
 }
 
 .currency {
-  min-width: 300px;
-  margin-right: 5px;
-  margin-left: 5px;
+  min-width: 200px;
 }
 
 .currency-search {
@@ -71,11 +69,19 @@ span {
 .currency-search label {
   display: flex;
   flex-direction: column;
-  max-width: 200px;
 }
 
-.currency-search label span {
+.currency-search label {
   margin-bottom: 10px;
+}
+
+.currency-search input {
+  max-width: 100px;
+  border: none;
+  border-bottom: 2px solid #AFAFAF;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  outline: none;
 }
 
 .currency-search label input {
@@ -106,6 +112,7 @@ span {
 
 .currency-relation > img {
   margin: 0 10px;
+  width: fit-content;
 }
 
 .currency-relation .switcher {
@@ -180,4 +187,35 @@ span {
 .converter > div:last-child .currency-selector__value {
   pointer-events: none;
   border-bottom-color: #AFAFAF;
+}
+
+@media screen and (max-width: 768px) {
+  .component {
+    padding: 20px 30px;
+  }
+
+  .container {
+    margin: 20px;
+  }
+
+  .currency-relation {
+    flex-direction: column;
+  }
+
+  .currency-relation > img {
+    margin: 10px 0;
+  }
+
+  .currency-relation__right {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .converter {
+    flex-direction: column;
+  }
+
+  .convert {
+    margin: 10px 0;
+  }
 }

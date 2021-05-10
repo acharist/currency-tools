@@ -13,10 +13,8 @@ export default function CurrencySearch() {
 
     return (
         <form className="currency-search component">
-            <label>
-                <span>Поиск валюты:</span>
-                <input type="text" value={value} onChange={handleChange}></input>
-            </label>
+            <label htmlFor="search">Поиск валюты:</label>
+            <input type="text" value={value} onChange={handleChange} id="search"></input>
         </form>
     )
 }
