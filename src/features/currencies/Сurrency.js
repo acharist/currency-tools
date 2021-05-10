@@ -26,7 +26,6 @@ export default function Сurrency({ currency }) {
                                                 financial(currency.Previous));
 
     function hangleSwitch() {
-        // НЕ КОРРЕКТНО!!!
         value === currency.Value ? setValue(financial(currency.Nominal / currency.Value)) : setValue(currency.Value);
         setCharCodes({
             basic: charCodes.basic === currency.CharCode ? 'RUB' : currency.CharCode,

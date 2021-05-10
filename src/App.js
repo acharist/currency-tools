@@ -5,7 +5,6 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
-// import logo from './logo.svg';
 
 //Navabar
 import Navabar from './app/Navbar.js';

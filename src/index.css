@@ -123,3 +123,61 @@ span {
 .price-difference .decline span {
   color: #FF2626;
 }
+
+.converter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.currency-selector {
+  width: fit-content;
+  margin: 0;
+}
+
+.convert {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.currency-selector__name {
+  color: #AFAFAF;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.currency-selector__container {
+  display: flex;
+}
+
+.currency-selector__currencies {
+  border: none;
+  background-color: transparent;
+  font-size: 1.8rem;
+  color: #5B5B5B;
+  outline: none;
+  margin-right: 20px;
+}
+
+.currency-selector__value {
+  border: none;
+  border-bottom: 2px solid #2697FF;
+  font-size: 1.8rem;
+  color: #5B5B5B;
+  outline: none;
+  max-width: 120px;
+}
+
+.converter > div:last-child .currency-selector__value {
+  pointer-events: none;
+  border-bottom-color: #AFAFAF;
+}

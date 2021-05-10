@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from 'react-redux';
-import { nanoid } from '@reduxjs/toolkit'
+import { nanoid } from '@reduxjs/toolkit';
 
 //Components
 import CurrencySearch from './CurrencySearch';
@@ -38,6 +38,5 @@ export default function Currencies() {
                 {content}
             </div>
         </div>
-
     )
 }
